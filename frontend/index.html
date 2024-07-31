@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/index.css">
+    <title>송성원</title>
+</head>
+<body>
+    <body>
+        <header>
+          <h1>To Do List</h1>
+          <div class="input-wrapper">
+            <input type="text" id="input-box" placeholder="내용을 입력하세요" /
+           >
+            <input
+              type="button"
+              id="input-button"
+              value="작성"
+              onclick="addTodo(this)"
+            />
+          </div>
+        </header>
+        <main>
+          <ul class="to-do-list">
+            <li>
+              <input
+                type="checkbox"
+                class="checkbox"
+                onclick="onClickCheckbox(this)"
+              />
+              <span>first item</span>
+              <button
+                value="x"
+                width="20"
+                height="20"
+                onclick="onClickDeleteButton(this)"
+              />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="checkbox"
+                onclick="onClickCheckbox(this)"
+              />
+              <span>second item</span>
+              <button
+                value="x"
+                width="20"
+                height="20"
+                onclick="onClickDeleteButton(this)"
+              />
+            </li>
+          </ul>
+        </main>
+      </body>
+    <script src="./public/index.js"></script>
+
+</body>
+</html>
