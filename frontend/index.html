@@ -11,7 +11,7 @@
         <header>
           <h1>To Do List</h1>
           <div class="input-wrapper">
-            <input type="text" id="input-box" placeholder="내용을 입력하세요" /
+            <input type="text" minlength="1" id="input-box" placeholder="내용을 입력하세요" /
            >
             <input
               type="button"
@@ -28,9 +28,9 @@
                 type="checkbox"
                 class="checkbox"
                 onclick="onClickCheckbox(this)"
-              />
-              <span>first item</span>
-              <button
+              />first item
+              <input
+              type="button"
                 value="x"
                 width="20"
                 height="20"
@@ -39,17 +39,17 @@
             </li>
             <li>
               <input
-                type="checkbox"
-                class="checkbox"
-                onclick="onClickCheckbox(this)"
-              />
-              <span>second item</span>
-              <button
-                value="x"
-                width="20"
-                height="20"
-                onclick="onClickDeleteButton(this)"
-              />
+              type="checkbox"
+              class="checkbox"
+              onclick="onClickCheckbox(this)"
+            />second item
+            <input
+            type="button"
+              value="x"
+              width="20"
+              height="20"
+              onclick="onClickDeleteButton(this)"
+            />
             </li>
           </ul>
         </main>

@@ -1,4 +1,10 @@
+const addBtn = document.querySelector('#input-button');
 
+addBtn.addEventListener('click', () => {
+    if(addBtn.value == ''){
+        return
+    }
+})
 
 
 // input버튼시 add
@@ -10,10 +16,11 @@ function addTodo(elem) {
     <input
       type="checkbox"
       class="checkbox"
-     
+      onclick="onClickCheckbox(this)"
     />
-    <span>${inputBoxValue}</span>
-    <button
+    ${inputBoxValue}
+    <input
+              type="button"
                 value="x"
                 width="20"
                 height="20"
@@ -35,3 +42,4 @@ function addTodo(elem) {
 function onClickDeleteButton(deleteElem) {
     deleteElem.parentElement.remove();
   }
+
