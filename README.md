@@ -25,9 +25,9 @@ sesac midterm  - backend ( Node. js )
 
 5. Model, Controller, Router (MVC 모델)
    - model(_index) : 현재 index / Todo로 작성 -> index에서는 sequelize를 불러와서 todo 모델에 맞게 db.Todo / db.sequelize / db.Sequelize를 설정해서 module로 설정한다.
-   - model(_Todo) : Todo의 속성값을 지정해서 그것을 통해서 이제 index에서 db.Todo 생성함
-   - route(_todo) : express 모듈을 사용해서 router를 지정가능해진다. 또한 http(rest api) 사용을 통해 post, get, put, delete에 따른 url 사용을 route에서 진행한다ㅏ.
-   - controller(_Ctodo) : controller에서 메서드를 만들어서 결국 app.js에서 불러와서 메서드 사용을 가능하게 한다ㅏ.
+   - model(_Todo) : Todo의 테이블을 지정해서 sequelize에서 이 테이블을 보고 자동으로 생성한다.
+   - route(_todo) : express 모듈을 사용해서 router를 지정가능해진다. 또한 http(rest api) 사용을 통해 post, get, put, delete에 따른 url 사용을 route에서 진행한다.
+   - controller(_Ctodo) : controller에서 쿼리문을 작성해서 이제 그거애 맞는 메서드를 만들어서 라우터와 연결되는 부분이다. 
 
 6. app.js
    - app.js에서는 express 모듈을 불러와서 route를 등록하며 route에 등록되어있는 url에 맞게 controller에 있는 로직들이 적용된다고 생각하면된다.
