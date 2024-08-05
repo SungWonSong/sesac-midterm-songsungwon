@@ -1,5 +1,8 @@
 # sesac-midterm-songsungwon
-sesac midterm  - backend 정리
+sesac midterm  - backend ( Node. js )
+![img](https://github.com/user-attachments/assets/64767493-63ab-4b22-b516-e5b219d5a896)
+
+
 
 1. config.json
    - 개발환경에 따른 변수를 달리 설정하는 것을 환경변수라 부르고, config.json / .env 모듈이 있는데 이번에는 config.json을 사용
